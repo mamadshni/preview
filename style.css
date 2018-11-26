@@ -2,7 +2,7 @@ p{
     direction: rtl
 }
 
-/* start of section 0 */
+/* start of header section  */
 
 #header-section{
     background-image: url(img/Faramouj_New_12-09.png);
@@ -69,4 +69,12 @@ p{
     }
 }
 
-/* end of section 0 */
+/* end of header section  */
+
+#section1 {
+    background: burlywood
+}
+
+#section2 {
+    background: rebeccapurple
+}

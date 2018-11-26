@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Easing - fullPage.js</title>
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="dist/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+	
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+			<a class="d-lg-none navbar-brand" href="#"><img src="img/faramouj-logo.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav container flex-row-reverse">
+					<a class="p-2 flex-fill align-self-center nav-item nav-link active" href="#">صفحه اصلی</a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">نمونه کار</a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">سئو</a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">طراحی فروشگاه اینترنتی</a>
+					<a class="p-2 flex-fill nav-item nav-link" href="#"><img src="img/faramouj-logo.png" alt=""></a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">طراحی وب سایت</a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">برند سازی و افزایش فروش</a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">وبلاگ</a>
+					<a class="p-2 flex-fill align-self-center nav-item nav-link" href="#">درباره ما</a>		
+				</div>
+			</div>
+		</nav>
+
+<div id="fullpage">
+
+	<div class="section" id="header-section">
+
+		<div class="container" style="transform: translateY(30px)">
+			<div class="header-section-text">
+				<p class="header-section-title">فراموج</p>
+				<p class="header-section-detail">SENS YOUR DIGITAL MARKETING DREAM</p>
+			</div>
+			<img src="img/Faramouj_icon-2.png" class="Banner-vector rounded mx-auto d-block"></img>
+		</div>
+		
+	</div>
+
+	<div class="section" id="section1">
+			
+		<h1>easeOutBack</h1>
+
+	</div>
+
+	<div class="section" id="section2">
+	
+		<h1>Cool uh?</h1>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="dist/fullpage.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        easingcss3: 'cubic-bezier(0.725, -0.005, 0.485, 1.265)',
+        navigation: true,
+    });
+</script>
+
+</body>
+</html>

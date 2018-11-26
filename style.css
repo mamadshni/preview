@@ -1,0 +1,72 @@
+p{
+    direction: rtl
+}
+
+/* start of section 0 */
+
+#header-section{
+    background-image: url(img/Faramouj_New_12-09.png);
+    background-color: #fdfdfd;
+    background-size: cover;
+}
+
+#header-section .header-section-text{
+    height: 12rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #808080;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#header-section .header-section-title{
+    font-weight: 200;
+    font-size: 5.14285714rem;
+    margin-bottom: 0;
+}
+
+#header-section .header-section-detail{
+    font-size: 0.8rem;
+}
+
+.Banner-vector {
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 42rem;
+    display: flex;
+    position: absolute;
+    -webkit-animation: spin 100s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* end of section 0 */

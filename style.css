@@ -5,6 +5,7 @@ p{
 /* navbar  */
 .navbar-light .navbar-nav .nav-link{
     transition: color 0.7s ease-in-out;
+    color :#323232;
 }
 
 
@@ -12,7 +13,8 @@ p{
 .fp-viewing-2-0 .navbar-light .navbar-nav .nav-link,
 .fp-viewing-2-1 .navbar-light .navbar-nav .nav-link,
 .fp-viewing-2-2 .navbar-light .navbar-nav .nav-link,
-.fp-viewing-2-3 .navbar-light .navbar-nav .nav-link
+.fp-viewing-2-3 .navbar-light .navbar-nav .nav-link,
+.fp-viewing-5 .navbar-light .navbar-nav .nav-link
 {
     color: #fefefe ;
 }
@@ -93,6 +95,7 @@ p{
     background-image: url(img/Faramouj_New_12-11.png);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .feature-items {
@@ -153,41 +156,78 @@ p{
    
 }
 
+#service-section .fp-slides{
+    width: 50vw;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 .service-slide{
+    text-align: center;
+    margin-top: -15vh;
+}
+
+
+.service-slide h4{
+    color: #231C63;
+}
+
+.service-cover{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
     background-image: url(img/Faramouj_New_12-07.png);
-    background-color: #fdfdfdb0;
+    background-color: rgba(248, 245, 245, 0.671);
     background-size: cover;
     background-position: center;
 }
 
 .service-video{
+    z-index: 1;
     position: absolute;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.service-title {
-    height: 6rem;
-    width: 38rem;
+.service-video video{
     position: absolute;
-    z-index: 2;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+
+
+.service-title {
+    top: 15%;
+    position: relative;
+    z-index: 40;
+    text-align: center;
+    color: #231C63;
 }
 
 .fp-controlArrow.fp-prev {
- left: 3%;
+    z-index: 2;
+    left: 3%;
 }
 
 .fp-controlArrow.fp-next {
+    z-index: 2;
     right: 3%;
 }
 
 /* end of service section  */
 
-/* end of service section  */
+/* start of prize section  */
 
 #prize-section{
     background-image: url(img/Faramouj_New_12-22.png);
@@ -207,7 +247,6 @@ p{
     position: absolute;
     width: 150px;
     height: 410px;
-    cursor: pointer;
 }
 
 .prize-left-sign{
@@ -221,13 +260,222 @@ p{
     position: absolute;
     width: 150px;
     height: 410px;
-    cursor: pointer;
 }
 
 .main-prize img{
-    width: 8rem;
+    width: 7rem;
 }
 
 .small-prize img{
-    width: 7rem;
+    width: 5rem;
 }
+
+.small-prize img {
+    transform: scale(0.5);
+    transition: 1s ease-in-out;
+}
+
+.fp-viewing-3 .small-prize img {
+    transform: scale(1);
+}
+
+
+.main-prize img {
+    transform: scale(0.5);
+    transition: 0.8s ease-in-out;
+}
+
+.fp-viewing-3 .main-prize img {
+    transform: scale(1);
+}
+/* end of prize section  */
+
+/* start of article section  */
+
+#article-section {
+    background-image: url(img/Faramouj_New_12-17.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+.article-title {
+    text-align: center;
+    color: #231C63;
+}
+
+.article-card {
+    text-align: right;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.article-card img {
+    width: 100%;
+}
+
+.article-card h2 {
+    color: #1b1919
+}
+
+.article-card h6 {
+    color: #383131
+}
+
+.article-card p {
+    color: #302828
+}
+
+.article-card a.btn {
+    width: 6em;
+}
+
+
+.article-card:before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(8, 133, 206, 0.1);
+    transition:0.5s ease;
+    pointer-events: none;
+}
+  
+.article-card:after{
+    content: '';
+    position:absolute;
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(244, 85, 6, 0.1);
+    transition:0.5s ease;
+    pointer-events: none;
+}
+
+.article-card:hover:before{
+    left:-50%;
+    transform: skewX(-5deg);
+}
+
+.article-card:hover:after{
+    left:-50%;
+    transform: skewX(-5deg) translateX(-50.1%);
+}
+
+
+.article-card:nth-child(1){
+    transform: translateX(-50vw) rotateZ(360deg);
+    transform-origin: center;
+    transition:1s ease;
+}
+
+.fp-viewing-4 .article-card:nth-child(1){
+    transform: translateX(0vw) rotateZ(0deg);
+}
+
+.article-card:nth-child(2){
+    transform: rotateX(90deg);
+    transition:1s ease;
+}
+
+.fp-viewing-4 .article-card:nth-child(2){
+    transform: rotateX(360deg);
+}
+
+.article-card:nth-child(3){
+    transform: translateX(50vw) rotateZ(360deg);
+    transform-origin: center;
+    transition:1s ease;
+}
+
+.fp-viewing-4 .article-card:nth-child(3){
+    transform: translateX(0vw) rotateZ(0deg);
+}
+
+/* end of article section  */
+
+/* start of bottom section */
+
+#bottom-section {
+    background-image: url(img/black-eggs.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.footerEnd {
+    content: "";
+    display: block;
+    background-image: url(img/Faramouj_New_footer.png);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 135px;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.footer-card {
+    text-align: right;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.footer-card h2 {
+    color: #DCB162;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.footer-card p {
+    color: #d3d3d3;
+    font-size: 0.9rem;
+}
+
+.footer-card .input-group .form-control{
+    border-radius:0 .25rem .25rem 0 !important; 
+}
+
+.footer-card:nth-child(2) ul {
+    list-style-type: none;
+    padding-right: 0;
+}
+
+.footer-card:nth-child(2) a {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 0.9rem;
+}
+.footer-card:nth-child(2) a:hover {
+    color: #525261;
+}
+
+.btn-self-gold {
+    color: #fff;
+    background-color: #E4B866;
+    border-color: #E4B866;
+}
+
+.footer-card .input-group .btn-self-gold {
+    border-radius:.25rem 0 0 .25rem !important; 
+}
+
+.social-title{
+    text-align: center;
+    color: #DCB162;
+}
+
+.social-icon {
+    background: linear-gradient(to left, #343646 0%, #151720 100%);
+    color: #e5b965;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    height: 32px;
+    line-height: 20px;
+    width: 32px;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+/* end of bottom section */
